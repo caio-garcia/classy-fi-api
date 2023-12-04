@@ -1,0 +1,45 @@
+{
+  "name": "classy-fi-api",
+  "version": "1.0.0",
+  "description": "ClassyFi API",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest",
+    "build": "npm install && npx tsc",
+    "start": "npx tsc && node dist/app.js",
+    "lint:check": "npx eslint . --ext .ts --quiet",
+    "lint:fix": "npx eslint . --ext .ts --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/caio-garcia/classy-fi-api.git"
+  },
+  "author": "Caio Garcia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/caio-garcia/classy-fi-api/issues"
+  },
+  "homepage": "https://github.com/caio-garcia/classy-fi-api#readme",
+  "devDependencies": {
+    "@jest/globals": "^29.7.0",
+    "@types/dotenv": "^8.2.0",
+    "@types/express": "^4.17.21",
+    "@types/jest": "^29.5.10",
+    "@types/pg": "^8.10.9",
+    "@typescript-eslint/eslint-plugin": "^6.12.0",
+    "eslint": "^8.54.0",
+    "eslint-config-standard-with-typescript": "^40.0.0",
+    "eslint-plugin-import": "^2.29.0",
+    "eslint-plugin-n": "^16.3.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "ts-dotenv": "^0.9.1",
+    "ts-jest": "^29.1.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.3.2"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "pg": "^8.11.3"
+  }
+}
